@@ -13,6 +13,19 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -28,6 +41,13 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
+#root {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
